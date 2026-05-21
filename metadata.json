@@ -1,0 +1,10 @@
+{
+  "name": "CheckInFlow",
+  "description": "Smart Attendance & Networking Platform for events, conferences, and meetups.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

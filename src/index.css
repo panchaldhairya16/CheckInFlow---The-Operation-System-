@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Theme mappings mapped to CSS variables */
+  --color-slate-950: var(--theme-slate-950);
+  --color-slate-900: var(--theme-slate-900);
+  --color-slate-850: var(--theme-slate-850);
+  --color-slate-800: var(--theme-slate-800);
+  --color-slate-750: var(--theme-slate-750);
+  --color-slate-700: var(--theme-slate-700);
+  --color-slate-600: var(--theme-slate-600);
+  --color-slate-500: var(--theme-slate-500);
+  --color-slate-450: var(--theme-slate-450);
+  --color-slate-400: var(--theme-slate-400);
+  --color-slate-350: var(--theme-slate-350);
+  --color-slate-300: var(--theme-slate-300);
+  --color-slate-200: var(--theme-slate-200);
+  --color-slate-100: var(--theme-slate-100);
+  --color-white: var(--theme-white);
+}
+
+:root {
+  --theme-bg-body: #070b13;
+  --theme-bg-header: rgba(7, 11, 19, 0.8);
+  --theme-slate-950: #020617;
+  --theme-slate-900: #0f172a;
+  --theme-slate-850: #131d31;
+  --theme-slate-800: #1e293b;
+  --theme-slate-750: #25334a;
+  --theme-slate-700: #334155;
+  --theme-slate-600: #475569;
+  --theme-slate-500: #64748b;
+  --theme-slate-450: #7c8ba1;
+  --theme-slate-400: #94a3b8;
+  --theme-slate-350: #abb7c5;
+  --theme-slate-300: #cbd5e1;
+  --theme-slate-200: #e2e8f0;
+  --theme-slate-100: #f1f5f9;
+  --theme-white: #ffffff;
+}
+
+.theme-light {
+  --theme-bg-body: #fafbfe;
+  --theme-bg-header: rgba(250, 251, 254, 0.8);
+  --theme-slate-950: #ffffff;
+  --theme-slate-900: #f8fafc;
+  --theme-slate-850: #eff3f8;
+  --theme-slate-800: #e2e8f0;
+  --theme-slate-750: #dae1eb;
+  --theme-slate-700: #cbd5e1;
+  --theme-slate-600: #64748b;
+  --theme-slate-500: #475569;
+  --theme-slate-450: #334155;
+  --theme-slate-400: #1e293b;
+  --theme-slate-350: #111827;
+  --theme-slate-300: #0f172a;
+  --theme-slate-200: #020617;
+  --theme-slate-100: #020617;
+  --theme-white: #020617;
+}
+
+/* Custom Micro Animations for SaaS Aesthetic */
+@keyframes laserSweep {
+  0% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    top: 100%;
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    opacity: 0.8;
+  }
+}
+
+@keyframes slowPan {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-laser-sweep {
+  animation: laserSweep 3s infinite linear;
+}
+
+.animate-spin-slow {
+  animation: spin 10s infinite linear;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom Scrollbar Styles */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}

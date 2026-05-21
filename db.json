@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Dhairya Panchal",
+      "email": "panchaldhairya2005@gmail.com",
+      "role": "Admin"
+    },
+    {
+      "id": "u2",
+      "name": "Alice Volunteer",
+      "email": "alice@presently.io",
+      "role": "Volunteer"
+    },
+    {
+      "id": "u_1779356408066",
+      "name": "Panchaldhairya1919",
+      "email": "panchaldhairya1919@gmail.com",
+      "role": "Organizer"
+    }
+  ],
+  "events": [],
+  "attendance": []
+}
